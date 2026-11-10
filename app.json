@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "LUMI Life",
+    "slug": "lumi-life",
+    "owner": "tristankretics-team",
+    "version": "0.1.0",
+    "scheme": "lumilife",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "bundleIdentifier": "com.lumi.life",
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.lumi.life",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "LUMI potrebuje mikrofon za snemanje tvojih zgodb."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Izberi fotografije in videe za svoj spomin.",
+          "cameraPermission": "Fotografiraj trenutek za svoj arhiv.",
+          "microphonePermission": "Posnemi zvok za video spomin."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "a0594b62-ecd8-41b6-9437-af332e85587f"
+      }
+    }
+  }
+}

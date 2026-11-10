@@ -1,0 +1,11 @@
+node_modules/
+.git/
+.expo/
+build-android/
+build-ios/
+dist/
+.env
+.env.*
+!.env.example
+*.zip
+*.log
